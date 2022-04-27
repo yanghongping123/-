@@ -1,0 +1,496 @@
+A=`材料.excel内容
+json.dumps()函数是将字典转化为字符串）
+json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典）
+
+`目标流程.流程名称 = 'MRP-BOM'   #调用其他流程的函数   这个指令类型必须是流程
+
+`目标流程.材料.听到的其他信息 = {'_cmd': '_download',    # 所传递的参数
+    'position':['3'],
+    'content': ['PartNumber','1'], 'page':1, 'async': 1, 'timeout': 4,'f_path':"C:/Users/Administrator/Desktop/cesi/BOM--PCBA_USB2_M_V0.1.xlsx"}
+#'content': ['1','2','3','4','5','6','7','8','9','10','11'], 
+
+kdb_operate.g_wdb.execute_sql("select count(*) from " + `材料.表名)
+
+`目标流程.流程名称 = '保存到excel'  #调用名称叫'保存到excel'的函数
+`目标流程.材料.内容 = 保存内容        #	`目标流程.材料.内容  是个函数  后面的是参数
+`目标流程.材料.文件路径 = "bin/temp/" + `材料.本体内容["dowload_file_name"]
+
+拷贝域   复制流程进行测试
+brunlog.info(显示内容)==`打印()  ~= `说话()
+本体内容[增加标题].append(增加内容)   {}      nhooo.com  java在线编译器
+
+https://139.9.154.41/self                                            测试环境   http://114.115.132.117:7000/self?workbench
+de_1233
+sniffer128
+192.168.0.244
+
+
+`材料.本体内容=`读取本体("本体45","cesi-10")    #本体内容只能用双引号
+
+`材料.听到的其他信息    #机器人接收到的信息
+from base.common.kbound import Bound_resource
+Bound_resource(`材料.听到的其他信息['async_key']).append_unique("司令, 你好")       #给你发消息者返回消息
+
+B=list(A.keys())[list(A.values()).index(i)]  字典通过值寻找键
+
+from datetime import datetime
+now =datetime.now()
+now_time=now.strftime("%Y-%m-%d, %H:%M:%S") 
+
+本体的读写   字典的读写  数据的处理
+
+
+{
+    "定时监督":{
+        "名称":"定时监督",
+        "分钟":"*",
+        "时":"",
+        "日":"",
+        "月":"",
+        "星期":"",
+        "所指":"循环100次",
+        "计划任务信息":"",
+        "上次调度时间":{
+            "年":2021,
+            "月":8,
+            "日":17,
+            "时":16,
+            "分钟":43,
+            "星期":1
+        }
+    }
+}
+
+if   continue   如果是  就跳过
+break  跳出 for while 循环
+json的字符串强制用双引号，dict的字符串可以用单引号、双引号；
+dict可以嵌套tuple,json里只有数组
+
+机器人之间的相互交互   流程名  测试返回-(两机器人交互返回数值列表)  协助读取-(两机器人截图发送图片)
+
+字典索引纯在  if `材料.抢舱信息[key]["箱型及数量"] in `材料.抢舱信息[key]:    if   >>> in >>>>  配合break使用
+
+`c_pspv.剩余列表 = `材料.返回内容  #  子级向父级传递参数
+当前流程名称 = `节点.field
+`说话(当前流程名称)
+`说话(`刻述.我)
+
+A={"id":"123","name":"xiaoming"}
+
+        			     dict_items([('id', '123'), ('name', 'xiaoming')])
+                              		     dict_keys(['id', 'name'])
+print(A.items())                               dict_values(['123', 'xiaoming'])
+print(A.keys())
+print(A.values())
+
+
+谷歌浏览器参数:
+option = webdriver.ChromeOptions()
+option.add_experimental_option("detach",True)  #不自动关闭浏览器
+browser = webdriver.Chrome(options=option)   #打开谷歌浏览器
+option.add_experimental_option("excludeSwitches", ['enable-automation'])   #关闭"chrome正在受到自动测试软件的控制"
+option.add_argument('--incognito')  #启用无痕模式
+selenium - switch_to.window() - 多窗口切换
+
+browser = webdriver.Chrome(executable_path=path,options=option)
+browser.implicitly_wait(3.1)
+
+implicitly_wait():隐式等待
+当使用了隐士等待执行测试的时候，如果 WebDriver没有在 DOM中找到元素，将继续等待，超出设定时间后则抛出找不到元素的异常
+换句话说，当查找元素或元素并没有立即出现的时候，隐式等待将等待一段时间再查找 DOM，默认的时间是0
+一旦设置了隐式等待，则它存在整个 WebDriver 对象实例的声明周期中，隐式的等到会让一个正常响应的应用的测试变慢，
+它将会在寻找每个元素的时候都进行等待，这样会增加整个测试执行的时间。
+只有try  没有except  会报语法错误
+B=B.replace(" ","")  正则移除空格
+subprocess.Popen(["notepad.exe", "test.txt"])
+
+一个端口对应一个  网络  程序
+一个端口对应多个进程,一个进程对应多个线程
+/  正斜杠  \反斜杠\\或者r"\\"
+
+import subprocess                                                        #调用谷歌安装程序
+from base.common import kstate
+cmd = kstate.g_cur_path+"bin/chrome32_94.exe"
+p = subprocess.Popen(cmd, shell=True)
+`说话("1111")
+
+114.115.152.64 
+Weibin128
+114.115.153.235
+Yantian128
+
+from base.common import kstate
+kstate.g_robot_info['soft_id']
+
+#import os
+#os.system("taskkill /f /im wechat.exe")
+等价于::::::
+import subprocess as p
+p.getoutput("taskkill /f /im chrome.exe")
+
+数据库建立操作
+
+from base.common import kdb_operate     #不能有id列
+`材料.列名=["name","age","school","food","drink"]
+建表内容 = ''
+for i in `材料.列名:
+    建表内容 += i + ' varchar(30),'
+建表内容 = 建表内容[:-1]
+
+msg = {}
+msg['create_sql'] = 'create table ' + `材料.表名 + ' (id INTEGER PRIMARY KEY  AUTOINCREMENT, ' + 建表内容 + ' )'
+
+dmsg = kdb_operate.create_table(msg)
+from base.common import kdb_operate
+`说话(`材料.表名)
+tdata = kdb_operate.g_wdb.execute_sql("select distinct " + `材料.列名 + " from " + `材料.表名)   #没有空格会报错  sql语句一双引号下一定要有空格,第一个双引号可以没有
+`说话(tdata)
+
+
+节点辅助域之流程
+
+sql语句一定要注意语法  空格   引号
+流程里面全是指令的话,  没有`材料.目标流程   的话  会报主程序异常的错误
+
+UAT测试环境   https://114.115.155.179/   15343015719  a1481611078
+
+
+表格上传网址    https://devcloud.huaweicloud.com/
+V0.6.5版本测试通过,已上传文档中心,申请上生产环境
+
+流程输出结果只能下一个节点调用,下下节点调用不了
+读取文字流程返回结果是一个列表  无就是[ ](空列表)
+
+存入excel可以用二维列表
+
+list1 = ['a', 'b', 'c', 'd']   #列表去重  礼盒12粒（单果180g+）
+list2 = []
+for i in range(4):
+    if list1[i] == 'c':
+        continue    
+    else:
+        list2.append(list1[i])
+print(list2)
+
+2021/12/20:
+i frame标签:表单标签  ctrl+f查询
+识别图片的时候,动图会出错
+输入文字,也要坐标  ############
+
+
+A=`方法.切部分图片(`刻场景.原图,[32,640,1,800])  #前面加个眨眼(屏幕截图)  
+from hri import eye
+`刻场景.原图 = eye.get_screen()  眨眼原理
+
+根据当前时间日期修改本体内容
+
+比较强大的功能   :文字识别   :色彩区分  :流程跳转
+
+参数 +数据处理+逻辑分析+计划跳转+新界面识别+返回上一级  版本说明文档
+
+#`节点.结果为True时走第1个子节点, 否则走第2个子节点
+`说话(`材料.异常流程.流程,`材料.异常流程.节点)
+`节点.结果 = `材料.异常流程.流程=="tiktok_定向好友扩展"   #心流异常里面的
+
+自我修复功能(自我改代码)
+记录寻找标记位记录上下滑是否完成  滑动距离是多少
+
+网络延长,页面刷新慢也会影响软件的运行
+
+`说话(`父流程节点.name, `父流程节点.field, `父流程['材料'])#父流程节点名称, 父流程名称, 父流程传的参数
+`说话(父流程)#父流程传下来的所以参数
+
+文字识别  轮廓匹配  记录标记位  寻找标记位很好用(自己可以用python实现)
+
+页面检测   页面标签识别  页面修复功能
+
+版本测试失败,不具备测试条件,打回修复,等待下次测试
+
+time.sleep(1)
+if not `材料.崩坏:
+    `材料.崩坏=0
+`材料.崩坏+=1
+if `材料.崩坏>=6:#防止死循环
+    `触发异常
+
+`目标流程.流程名称 = '读取文字'
+`目标流程.材料.关注区域 = `刻坐标["tiktok_直播间互动_再次识别"]
+`目标流程.材料.前景颜色 = '' #可输入颜色如 [0,0,0]
+`目标流程.材料.前景颜色范围 = '' 
+`目标流程.材料.目标图片 = ""
+`目标流程.材料.强制刷新图片 = 1  #读取文字强制刷新图片的参数  0,1
+
+a[::-1]#列表倒序
+a[:-1]#去掉最后一个的列表
+a[-1]最后一项的值
+
+np=numpy  np.where(count,x,y)#符合条件选x,不符合选y,count判断  python zip函数  把两个列表打包成元组
+a=[1,2]# a[-3]会报错  python try 要小心用  不会报错误
+
+特殊机型分辨率对应特殊机型(720*1600普遍批量, 到测试特殊修改)
+
+sid=kstate.g_robot_info['soft_id']
+`材料.sid="https://%s.deshinb.com:5000/interactive"%(sid)
+
+一个java文件里可以有多个类嘛？
+avatar言曌 2017年04月17日12:25:01 0  2014 views
+一个.java文件中可以有很多类。不过注意以下几点： 1、public 权限的类只能有一个（也可以一个都没有，但最多只有1个） 2、这个.java文件的文件名必须是public类的类名（一般的情况下，这里放置main方法是程序的入口） 3、若这个文件中没有public的类，则文件名随便是一个类的名字即可 4、用javac 编译这个.java文件的时候，它会给每一个类生成一个.class文件 像这样
+//文件名C.java
+class A
+{
+   ...
+}
+class B
+{
+   ...
+}
+//只要一个main函数就OK
+public class C {//保存C.java 文件 因为类C 下面有个main 函数，所以文件名C.java 
+    public static void main(String []args) {
+       ...
+    }
+}
+
+python 类需要实例化   #类中的方法与函数有传参数的区别  类相当于一个大函数
+class A():
+    name = "xiaomi"
+    __weight = "50kg"
+    def __init__(self,name):
+        self.name=name
+        #self.weight = __weight
+    def fangfa(self):
+        return self.name+self.__weight
+    def __fangfa_2(self):
+        print("私有方法")
+    def B_B(self):
+        self.__fangfa_2()
+print(A.name)#这个类没有实例化
+B=A("111").fangfa()#这个类实例化了,传了个参数,调用了方法
+print(B)
+
+system.out.println()
+
+xiaomi
+11150kg
+私有方法
+None     “不要重复发明轮子”，成了软件界的一句经典名言  框架是一个半成品的应用    框架的目标性非常强，它专注于解决某一特定领域的问题
+
+a =[1,2,3]
+b =a
+b.append(4)
+print(a)
+[1,2,3,4]
+
+class yangs():
+    def __enter__(self):
+        print("111")
+        return self
+    def test(self,a):
+        print("666")
+        print(a)
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print(exc_type, exc_val, exc_tb)
+with yangs() as yangs:
+    yangs.test("2022")        
+输出  
+111
+666
+2022
+None None None
+求偏导  
+from sympy import symbols, diff
+x, y = symbols('x y', real=True)  #xy 即是ab
+#A = diff( x**2 + y**3, y)
+B = diff( x**2 + y**3, y).subs({x:3, y:1})
+print(B)
+
+`材料.明度图 = `_cv2.cvtColor(`材料.子图, `_cv2.COLOR_BGR2HSV)   #获取亮度
+
+python  ocr  识别文字天花板   手机显示无障碍是指手机系统针对视障用户,对手机操作体验进行无障碍优化,让手机读屏软件识别并读出正确的信息内容,方便视障用户顺畅使用手机各个功能
+a = 0
+if a == False:print("666");print("777");print("8888");'''111''';print(111)  #python缩写
+图像模块  对于创建用于打印或网页的静态图形，我建议默认使用matplotlib和附加的库，比如pandas和seaborn。对于交互式图形以便在Web上发布，可以使用Plotly和Boken
+
+import pandas as pd
+print(pd.__version__())#报错TypeError: 'str' object is not callable  调用函数加了括号,表述有返回值
+
+def cc(f):
+    f()
+def vv():
+    print("hello")
+def AA():
+    pass
+print(cc(vv))
+print(AA())  
+
+输出 函数后面加括号,等函数执行完再返回,不加括号,直接返回对象
+hello
+None
+None
+
+if not 判断的是true 和Flase  `刻坐标 = `刻述.坐标集    `刻坐标.高 = 1000#赋值语句  相当于`刻坐标["高"] =1000
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+#创建包含时间序列的数据
+df = pd.DataFrame(np.random.randn(8,4),index=pd.date_range('2/1/2020',periods=8), columns=list('ABCD'))
+df.plot()
+plt.show()#画出来
+
+x = np.linspace(-5,5,50)
+y1 = 2*x + 1
+y2 = x**2
+plt.xlim(-5,5)
+plt.ylim(-5,5)
+
+plt.xlabel("i am x")
+plt.ylabel("i am y")
+plt.plot(x,y2)
+plt.plot(x,y1,color = "red",linewidth = 1.0,linestyle = "--")
+plt.show()
+
+
+a=[[1,1],1,1,1,1,1]
+a.append(1)
+print(list(set(a))) #python一维列表去重先转化成集合,再转化成列表
+
+实例  数学分析  多个多项式  求解  
+
+def vivi(_p):
+    `说话("222")
+cv2灰度转换
+`材料.lala = vivi   后面节点  `材料.lala(_p)调用  24,114,203,1200  
+import cv2   #cv2转化灰度图   地址r'复制地址'
+import numpy as np
+
+img_rgb = cv2.imread(r'C:\Users\A\Desktop\files\1649902358.4451766.bmp')
+img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+cv2.imshow('img', img_gray)
+cv2.waitKey(0)
+
+cv裁剪图片  
+img_rgb = cv2.imread(r'C:\Users\A\Desktop\files\1649902358.4451766.bmp')
+img_rgb = img_rgb[593:714,20:150] #[高2:高1,宽2:宽1]
+cv2.imshow('imgg',img_rgb)
+cv2.waitKey(0)
+cv2等比例缩放
+h, w = img_rgb.shape[:2]
+img_rgb = cv2.resize(img_rgb, dsize=(w//2, h//2))
+cv2图片匹配  #等比例缩放后,识别不精准
+import cv2
+import numpy as np
+
+img_rgb = cv2.imread(r'C:\Users\A\Desktop\files\101.bmp') #大图
+img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+template = cv2.imread(r'C:\Users\A\Desktop\files\1.bmp', 0)#小图
+h, w = template.shape[:2]
+
+res = cv2.matchTemplate(img_gray, template, cv2.TM_CCOEFF_NORMED)
+threshold = 0.4
+# 取匹配程度大于%80的坐标
+loc = np.where(res >= threshold)
+# np.where返回的坐标值(x,y)是(h,w)，注意h,w的顺序
+i=[]
+k=0
+for pt in zip(*loc[::-1]):
+    i.append(pt[0])
+for pt in zip(*loc[::-1]):
+    k+=1
+    bottom_right = (pt[0] + w, pt[1] + h)
+    for j in i:
+        if abs(pt[0]-j)<=5:
+            continue
+    print(k,pt[0])
+    cv2.rectangle(img_rgb, pt, bottom_right, (0, 0, 255), 2)
+print(k)
+cv2.imwrite("img.jpg", img_rgb)
+#cv2.imshow('img', img_rgb)
+cv2.imwrite(r'C:\Users\A\Desktop\files\3.bmp',img_rgb)
+`和`材料是一个东西
+cv2.imread(file_path,0)灰度处理参数1,0,-1  
+
+python申明变量
+a =0;b=0
+if a and b:print("true")
+kexec.py%108#^*ds-记录调度时间@计划任务 error,disk I/O error 硬盘满了  心流异常$lawnet保护@自我保护" 
+安卓手机导航键会影响页面布局(tiktok)
+\换行写  后面不能写#说明   ;写成一行
+tiktok_随机刷视频大纲域
+起点
+tiktok_随机刷视频
+鼠标拖拽
+表述(目标)
+等待文字出现
+读取文字
+点击坐标
+等(几)秒
+获取图标位置
+手机输入文字
+tiktok_刷对标博主
+tiktok_直播间互动
+手机打开软件
+tiktok_定向浏览博主视频
+tiktok_定向好友扩展_V2
+tiktok_回关打招呼_V2
+眨眼
+自我保护
+tiktok_页面修复
+回到手机桌面
+回到混沌
+判断文字是否出现
+次数循环
+退出循环
+打开小米手机搜索页
+强制终止
+获取区域亮度
+列表循环
+记录标记位
+寻找标记位
+处理存储记忆
+手机坐标集批量
+心流异常
+tiktok_页面检测
+tiktok_回到Home页
+手机坐标集
+自动更新
+tiktok_初始化
+停止任务
+
+迭代器generator 一次返回一个值,迭代生成  反应迅速,节省空间  yield和return   迭代器   iter()   next()处理当前值,返回下一个数
+标准库和第3方库  python 批量注释快捷键  "ctrl" + "/"
+python 操作 excel表格  import xlrd,xlwd,xlutils
+`说话(`材料.comment)  python构造特点  模块(module),包(package),库(lib),框架(framework)
+python的主要运用领域有   自动化, 运维、爬虫、科学计算、快速验证和web   
+字符串.lstrip()  字符串.replace(" ","").lower()     #字符串处理
+python -m http.server 8080   开启文件访问下载端口  手机端或者PC端开启内外IP访问端口,  可以成功访问下载文件
+try:
+    if a > 0:
+        print(1)
+except Exception as e:
+    print(e)               String[][] data = new String[2][5]; #java
+
+import java.util.Arrays;
+import java.util.Collections;	
+
+~~Integer[] data = {2,3,6,7,4,1,9,8};
+~~int max = Collections.max(Arrays.asList(data));
+Array数组的意思toArray转化成数组
+args_a,args_b,参数a,b   arrary数组    a_list, b_list,_temple,_dict   x_position   text_generator
+转置矩阵---对称矩阵--方阵
+ 表示方式不同。矩阵用的是方括号，行列式用的是双垂线，例如[A]这样的就是矩阵，而|A|这样的就是行列式。 2. 形状不同。矩阵的行数和列数可以相等，也可以不等，也就是说矩阵的形状可以是正方形的也可以是长方形的，而行列式的行和列必须相等，其形状必须是正方形的
+
+矩阵相当于向量，行列式相当于向量的模
+https://www.zhihu.com/question/20534668
+苹果手机坐标适配:
+原点[x1,x2]  起始点[y1,y2]  目标点[z1,z2]  比率 = 0.35  移动长度 = x1 + (y1-z1)*比率  #不能点击坐标,只能鼠标悬停移动过去,再才能点击,和android不一样. 还有,当远程电脑改变分辨率的时候, 计算公式  原点,坐标可能会发生变化, 通过向日葵软件获取到的图像
+
+np.mat()函数用于将输入解释为矩阵。np.array()函数用于创建一个数组。
+import numpy as np
+a = ((1,2,3),(4,5,6))
+b = np.mat(a)
+print(b)
+输出-------[[1 2 3][4 5 6]]   A.T转置矩阵 A.T.T = A  dot(A,B)矩阵的普通乘法,需满足A的行等于B的列  矩阵的特征值和矩阵的迹  后者为前者之和, 也等于方阵主对角线之和
+
+二维矩阵简写   a = [[j for j in range(-10,10)] for i in range(-3,3)]  
+三维矩阵简写   a = [[[k for k in range(-3,3)] for j in range(-3,3)] for i in range(-3,3)]
